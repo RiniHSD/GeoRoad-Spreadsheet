@@ -23,6 +23,8 @@
 	<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
 		integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+	<script src="plugins/leaflet.ajax.js"></script>
+	<script src="plugins/leaflet.ajax.min.js"></script> 
 	<script>
 		// siak
 		var map = L.map('map').setView([0.7948255063088958, 102.04898153561513], 13);
@@ -106,6 +108,16 @@
 		}
 
 		loadlayer();
+
+		var geojsonLayer = new L.GeoJSON.AJAX("data/jalansiak.geojson", {
+        style : {
+          fillColor:"#eff542",
+          fillOpacity: 0.7,
+          color: "red",
+          weight: 1,
+          opacity: 1
+        }
+      }).addTo(map);
 	</script>
 </body>
 </html>
