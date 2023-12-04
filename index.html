@@ -220,7 +220,7 @@
 			e.preventDefault();
 			btnSimpan.classList.toggle('d-none');
 			btnLoading.classList.toggle('d-none');
-			fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+			fetch(scriptURL, { method: 'POST', mode:"cors", body: new FormData(form) })
 				.then(response => {
 					console.log('Success!', response);
 					btnSimpan.classList.toggle('d-none');
