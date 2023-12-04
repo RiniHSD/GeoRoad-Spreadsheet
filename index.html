@@ -65,12 +65,6 @@
 												placeholder="Longitude" value="">
 										</div>
 									</div>
-									<div class="col-sm">
-										<div class="form-group">
-											<label for="gambar"><strong>Gambar</strong></label>
-											<input type="file" class="form-control-file text-primary" id="gambar" name="gambar">
-										</div>
-									</div>
 									<div class="col-sm-3">
 										<div class="form-group">
 											<label><strong>&nbsp;</strong></label><br>
@@ -220,7 +214,7 @@
 			e.preventDefault();
 			btnSimpan.classList.toggle('d-none');
 			btnLoading.classList.toggle('d-none');
-			fetch(scriptURL, { method: 'POST', mode:"no-cors", body: new FormData(form) })
+			fetch(scriptURL, { method: 'POST', body: new FormData(form) })
 				.then(response => {
 					console.log('Success!', response);
 					btnSimpan.classList.toggle('d-none');
