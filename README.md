@@ -7,6 +7,7 @@ Peta lokasi objek form input data dan web map untuk konten React Native dalam ra
 2. Spreadsheet Apps Script
 
 <p> Untuk melihat tampilan aplikasi dapat mengunjungi tautan dibawah ini</p>
-<p <a href= https://rinihsd.github.io/GeoRoad-Spreadsheet/>>Halaman Input Data</p>
+<p>Halaman Input Data</p>
 https://rinihsd.github.io/GeoRoad-Spreadsheet/
+<p>Halaman Tampilan Peta</p>
 https://rinihsd.github.io/GeoRoad-Spreadsheet/map.html
